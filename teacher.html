@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Teacher Info</title>
+        <link href="style_teacher.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("body").fadeIn(1000);
+                $(".heading").click(function(){
+                    $(this).parent().find(".subject").slideToggle(500).css("display","grid");
+                });
+            });
+        </script>
+    </head>
+    
+    <body>
+        <div id="header">
+            <p>Teacher Info</p>
+        </div>
+        
+        <nav>
+            <a href=teachers.html>Return to Previous</a>
+        </nav>
+        
+        <div id="portfolioHeader">
+            <p>Mr. Saman Aravinda</p>
+        </div>
+        
+        <div id="portfolio">
+            <div id="imageSection">
+                <img src="images/teacherAvatar.png">
+            </div>
+            
+            <div id="infoSection">
+                <div class="header">
+                    <p>Qualifications</p>
+                </div>
+                <div id="qualifications">
+                    <p>Qualification One</p>
+                    <p>Qualification Two</p>
+                    <p>Qualification Three</p>
+                    <p>Qualification Four</p>
+                </div>
+                
+                <div class="header">
+                    <p>Class Categories</p>
+                </div>
+                <div id="classCategories">
+                    <p>IGCSE Physics</p>
+                    <p>iAL Edexcel Physics</p>
+                    <p>Local GCE Physics</p>
+                    <p>Local AL Physics</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Learn.lk &copy; 2020</p>
+        </footer>
+    </body>
+</html>

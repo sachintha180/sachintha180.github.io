@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Teachers</title>
+        <link href="style_teachers.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                var teacherImages = ["images/teachers/agatha.jpg", "images/teachers/andrew.jpg", "images/teachers/anne.jpg", "images/teachers/brian.jpg", "images/teachers/carl.jpg", "images/teachers/edward.jpg", "images/teachers/emily.jpg", "images/teachers/rahul.jpg", "images/teachers/stewart.jpg"];
+                var teacherNames = ["Ms. Agatha", "Mr. Andrew", "Ms. Anne", "Mr. Brian", "Mr. Carl", "Mr. Edward", "Ms. Emily", "Mr. Rahul", "Mr. Stewart"];
+                var indexList = [];
+
+//                $("img").each(function(a){ 
+//                    var rndIndex = Math.floor(Math.random() * teacherImages.length);
+//                    indexList.push(rndIndex);
+//                    var rndImage = teacherImages[rndIndex];
+//                    $(this).attr("src", rndImage);
+//                });
+                
+                indexList = [0, 2, 4, 5, 1, 8, 3, 6, 7, 1, 5, 2, 6, 0, 7]
+                
+                $("img").each(function(a){
+                    var image = teacherImages[indexList[a]];
+                    $(this).attr("src", image)
+                })
+                
+                $(".name").each(function(b){
+                    console.log(b)
+                    $(this).text(teacherNames[indexList[b]]);
+                });
+                
+                $("body").fadeIn(1000);
+                $(".heading").click(function(){
+                    $(this).parent().find(".subject").slideToggle(500).css("display","grid");
+                });
+            });
+        </script>
+    </head>
+    
+    <body>
+        <div id="header">
+            <p>View Teachers</p>
+        </div>
+        
+        <nav>
+            <a href=index.html>Return to Homepage</a>
+        </nav>
+        
+        <div id="teachersDisplay">
+            <div class="subjectMain">
+                <p class="heading">Physics</p>
+                <div class="subject">
+                    <div class="teacher">
+                        <p class="name">Mr. Saman</p>
+                        <a href="teacher.html"><img src="images/teacherAvatar.png"/></a>
+                    </div>
+                    <div class="teacher">
+                        <p class="name">Mr. Karapitiya</p>
+                        <a href="teacher.html"><img src="images/teacherAvatar.png"/></a>
+                    </div>
+
+                    <div class="teacher">
+                        <p class="name">Ms. Silva</p>
+                        <a href="teacher.html"><img src="images/teacherAvatar.png"/></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subjectMain">
+                <p class="heading">Chemistry</p>
+                <div class="subject">
+                    <div class="teacher">
+                        <p class="name">Mr. Fernando</p>
+                        <a href="teacher.html"><img src="images/teacherAvatar.png"/></a>
+                    </div>
+
+                    <div class="teacher">
+                        <p class="name">Mr. Rizwan</p>
+                        <a href="teacher.html"><img src="images/teacherAvatar.png"/></a>
+                    </div>
+
+                    <div class="teacher">
+                        <p class="name">Mr. Dissanayake</p>
+                        <a href="teacher.html"><img src="images/teacherAvatar.png"/></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subjectMain">
+                <p class="heading">Biology</p>
+                <div class="subject">
+                    <div class="teacher">
+                        <p class="name">Mr. Riyaz</p>
+                        <a href="teacher.html"><img src="images/teacherAvatar.png"/></a>
+                    </div>
+
+                    <div class="teacher">
+                        <p class="name">Ms. Arachchi</p>
+                        <a href="teacher.html"><img src="images/teacherAvatar.png"/></a>
+                    </div>
+
+                    <div class="teacher">
+                        <p class="name">Ms. Grero</p>
+                        <a href="teacher.html"><img src="images/teacherAvatar.png"/></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subjectMain">
+                <p class="heading">Economics</p>
+                <div class="subject">
+                    <div class="teacher">
+                        <p class="name">Mr. Riyaz</p>
+                        <a href="teacher.html"><img src="images/teacherAvatar.png"/></a>
+                    </div>
+
+                    <div class="teacher">
+                        <p class="name">Ms. Arachchi</p>
+                        <a href="teacher.html"><img src="images/teacherAvatar.png"/></a>
+                    </div>
+
+                    <div class="teacher">
+                        <p class="name">Ms. Grero</p>
+                        <a href="teacher.html"><img src="images/teacherAvatar.png"/></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subjectMain">
+                <p class="heading">Computer Science</p>
+                <div class="subject">
+                    <div class="teacher">
+                        <p class="name">Mr. Riyaz</p>
+                        <a href="teacher.html"><img src="images/teacherAvatar.png"/></a>
+                    </div>
+
+                    <div class="teacher">
+                        <p class="name">Ms. Arachchi</p>
+                        <a href="teacher.html"><img src="images/teacherAvatar.png"/></a>
+                    </div>
+
+                    <div class="teacher">
+                        <p class="name">Ms. Grero</p>
+                        <a href="teacher.html"><img src="images/teacherAvatar.png"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Learn.lk &copy; 2020</p>
+        </footer>
+    </body>
+</html>

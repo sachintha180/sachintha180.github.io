@@ -1,0 +1,94 @@
+/* animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-name */ 
+
+body{
+    display: none;
+    font-family: 'Quicksand', sans-serif;
+    background-image: url("images/sky.jpg");
+    text-align: center;
+    margin: 20px 75px;
+}
+
+#header{
+    background-color: #A393BF;
+    font-size: 2.5em;
+    box-shadow: 0px 0px 5px #888888;
+}
+
+#header p{
+    margin: 0;
+    padding: 1% 0 1% 0;
+}
+
+nav{
+    margin: 10px 0;
+}
+
+nav:hover{
+    opacity: 0.75;
+}
+
+nav{
+    background-color: #9882AC;
+    padding: 1% 0 1% 0;
+    box-shadow: 0px 0px 5px #888888;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.subject{
+    display: none;
+    grid-template-columns: auto auto auto;
+    padding: 0px 10px 10px 10px;
+    margin: 0px 10px 10px 10px;
+}
+
+.heading{
+    margin: 10px 0px 0px 0px;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.heading:hover{
+    opacity: 0.75;
+}
+
+.heading:last-of-type{
+    margin-bottom: 10px;
+}
+
+.subject, .heading{
+    box-shadow: 0px 0px 10px #888888;
+}
+
+img{
+    height: 100px;
+}
+
+.teacher img:hover{
+    box-shadow: 0px 0px 10px #000;
+}
+
+footer p{
+    font-size: 1.2em;
+    margin: 15px 0;
+    color: white;
+}
+
+footer{
+    display: block;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #9882AC;
+    box-shadow: 0px 0px 5px #888888;
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    margin: 20px 300px;
+  }
+}
